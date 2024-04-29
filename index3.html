@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+
+  <div class="hero">
+    
+    <form method="POST", action="{{url_for('predict')}}">
+        <center> <h1>Suicidal tendency prediction system</h1></center><br>
+      <h4>can you describe have been feeling emotionally lately?</h4>
+      <div class="input-group">
+        <input type="text" name="a" id="name" placeholder="Please enter your answer here..." required>
+        <label for="name"></label>
+      </div>
+      <h3>what are some specific thought that have been on your mind recently?</h3>
+      <div class="input-group">
+        <input type="text" name="b" id="name" placeholder="Please enter your answer here..." required>
+        <label for="name"></label>
+      </div>
+      <h4> How would you describe your overall mood over the past week?</h4>
+      <div class="input-group">
+        <input type="text" name = "c" id="name" placeholder="Please enter your answer here..." required>
+        <label for="name"></label>
+      </div>
+      <h4> Have you noticed any changes in your behaviour or habits that concern you?</h4>
+      <div class="input-group">
+        <input type="text" name="d" id="name" placeholder="Please enter your answer here..." required>
+        <label for="name"></label>
+      </div>
+      <h4> Can you talk about any challanges you have been facing in your life recently?</h4>
+      <div class="input-group">
+        <input type="text" name="e" id="name" placeholder="Please enter your answer here..." required>
+        <label for="name"></label>
+      </div>
+      <h4>Explain your other feelings or emotions</h4>
+      <div class="input-group">
+        <textarea id="message"rows="8" name="g" placeholder="Please enter your answer here..."></textarea>
+        <label for="message"></label>
+      </div>
+      <div class="submit">
+        <button type="submit">Predict</button>
+      </div>
+    </form>
+  </div>
+  <center><footer>all rights are reserved by team @BYTE_STREAM_05</footer></center>
+</body>
+</html>
